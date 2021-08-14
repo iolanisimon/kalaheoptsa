@@ -1,0 +1,429 @@
+/*Font Import*/
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+/*Custom Scrollbar*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    transition-duration: 0.5s;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    transition-duration: 0.5s;
+    background-color: black;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(241, 241, 241); 
+    transition-duration: 0.5s;
+    border-radius: 8px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(204, 204, 204);
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
+
+  
+  /* Font */
+  
+  body {  
+      font-family: poppins; 
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('Images/background.jpeg');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+  }
+  
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  /* Heading Classes */
+  
+  .nodecoration-black {
+    text-decoration: none;
+    color: black;
+    text-decoration-color: transparent;
+  }
+  
+  .nodecoration-gray {
+    color: rgb(124, 124, 124);
+    text-decoration: none;
+  }
+  
+  .h3-homenumber {
+     text-align: center;
+     transition-duration: 3s;
+  }
+  
+  .h3-homenumber:hover {
+    font-size: 24px;
+    transition-duration: 0.3s;
+  }
+  
+  .margincenter {
+    text-align: center;
+    margin: 30px 150px;
+  }
+  
+  .center {
+    text-align: center;
+  }
+
+/*Navigation*/
+
+.nav {
+    color: white;
+    text-decoration: none;
+    float: left;
+    padding: 10px 30px;
+    background-color: transparent;
+    width: 100%;
+    transition-duration: 0.5s;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+}
+
+.navitem a {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    transition-duration: 0.3s;
+    padding: 8px 10px;
+    color: white;
+}
+
+.navitem a:hover {
+    color: rgb(163, 163, 163);
+}
+
+.navitem a.active {
+    font-weight: 600;
+    float: left;
+    transition-duration: 0.3s;
+}
+
+.navitem a.active:hover {
+    cursor: not-allowed;
+    color: rgb(221, 221, 221);
+}
+
+.nav-img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    padding: 1px 20px;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 3s;
+    animation: fadeanddropIn 0.5s ease-out forwards;
+}
+
+.banner-desk {
+    color: rgb(255, 107, 107);
+    margin: 20px 18px;
+    font-weight: 500;
+}
+
+/* Mobile Adjustments */
+
+.mobile-nav {
+  color: white;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+.navitem-mobile a { 
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  transition-duration: 0.3s;
+  padding: 10px 10px;
+  color: white;
+}
+
+.navitem-mobile a.active {
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+
+.mobile {
+  text-align: center;
+  padding: 30px;
+}
+
+.banner-mbl {
+  color: white;
+  text-align: center;
+  line-height: 10px;
+}
+
+@media all and (max-width: 500px) {
+  .nav {
+    display: none
+  }
+
+  .nav-img {
+    display: none;
+  }
+
+  .banner-desk {
+    display: none;
+  }
+
+  .banner-mbl {
+    display: contents;
+  }
+}
+
+@media all and (min-width: 501px) {
+    .mobile {
+      display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero */
+
+.relative {
+  height: 450px;
+}
+
+.hero-box {
+    background-color: rgba(255, 255, 255, 0.13);
+    color: white;
+    padding: 30px 20px 40px;
+    text-align: center;
+    width: 50%;
+    border-radius: 50px;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
+    transition-duration: 0.5s;
+}
+
+.hero-box:hover {
+  background-color: rgba(255, 255, 255, 0.178);
+  transition-duration: 1s;
+  border-radius: 60px;
+}
+
+.hero-title {
+    font-size: 30px;
+    line-height: 10px;
+    font-weight: 700;
+}
+
+.hero-desc {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0px 0px 10px 0px;
+}
+
+.hero-button {
+  border: 0px solid transparent;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: white;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  transition-duration: 0.5s
+}
+
+.hero-button:hover {
+  color: black;
+  background-color: rgb(235, 235, 235);
+  transition-duration: 0.5s;
+}
+
+.hero-button:focus {
+  background-color: grey;
+}
+
+@media all and (max-width: 500px) {
+  .hero-title, .hero-desc {
+    line-height: 35px;
+  }
+
+  .hero-button {
+    display: none;
+  }
+
+  .hero-box {
+    background-color: transparent;
+  }
+
+  .hero-box:hover {
+    background-color: transparent;
+  }
+}
+
+/*Sub to Calendar*/
+
+.calendar {
+  line-height: 15px;
+  text-align: center;
+  padding: 10px;
+}
+
+.calendar-small {
+  line-height: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.calendar-link {
+  color: rgb(48, 168, 23);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/*Footer*/
+
+.footer {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 40px 50px;
+}
+
+.footertext {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+/*Photos*/
+
+.photos {
+  padding: 5% 10%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+  /*No doecor for card text*/
+
+  .nodecoration-card {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Float four columns side by side */
+  .columncard {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    transition-duration: 1s;
+    box-sizing: border-box;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 10px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 800px) {
+    .columncard {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      transition-duration: 1s;
+    }
+  }
+
+  /* Style the counter cards */
+  .card {
+    padding: 16px;
+    text-align: center;
+    background: url(Images/background.jpeg);
+    transition-duration: 1s;
+    border-radius: 30px;
+    opacity: 1;
+  }
+
+  .card-2 {
+    padding: 16px;
+    text-align: center;
+    background: url(Images/background.jpeg);
+    transition-duration: 1s;
+    border-radius: 30px;
+    opacity: 1;
+  }
+
+  .card-3 {
+    padding: 16px;
+    text-align: center;
+    background: url(Images/background.jpeg);
+    transition-duration: 1s;
+    border-radius: 30px;
+    opacity: 1;
+  }
+
+  .card-4 {
+    padding: 16px;
+    text-align: center;
+    background: url(Images/background.jpeg);
+    transition-duration: 1s;
+    border-radius: 30px;
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .card {
+      opacity: 100%;
+    }
+
+    .card-2 {
+      opacity: 100%;
+    }
+
+    .card-3 {
+      opacity: 100%;
+    }
+
+    .card-4 {
+      opacity: 100%;
+    }
+  }

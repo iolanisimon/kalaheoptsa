@@ -1,0 +1,227 @@
+/*Font Import*/
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+/*Custom Scrollbar*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    transition-duration: 0.5s;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    transition-duration: 0.5s;
+    background-color: black;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(241, 241, 241); 
+    transition-duration: 0.5s;
+    border-radius: 8px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(204, 204, 204);
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
+
+  
+  /* Font */
+  
+  body {  
+      font-family: poppins; 
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      color: black;
+  }
+  
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  /* Heading Classes */
+  
+  .nodecoration-black {
+    text-decoration: none;
+    color: black;
+    text-decoration-color: transparent;
+  }
+  
+  .nodecoration-gray {
+    color: rgb(124, 124, 124);
+    text-decoration: none;
+  }
+  
+  .h3-homenumber {
+     text-align: center;
+     transition-duration: 3s;
+  }
+  
+  .h3-homenumber:hover {
+    font-size: 24px;
+    transition-duration: 0.3s;
+  }
+  
+  .margincenter {
+    text-align: center;
+    margin: 30px 150px;
+  }
+  
+  .center {
+    text-align: center;
+  }
+
+/*Navigation*/
+
+.nav {
+    color: black;
+    text-decoration: none;
+    float: left;
+    padding: 10px 30px;
+    background-color: transparent;
+    width: 100%;
+    transition-duration: 0.5s;
+    position: relative;
+    z-index: 3;
+}
+
+.navitem a {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    transition-duration: 0.3s;
+    padding: 8px 10px;
+    color: black;
+}
+
+.navitem a:hover {
+    color: rgb(163, 163, 163);
+}
+
+.navitem a.active {
+    font-weight: 600;
+    float: left;
+    transition-duration: 0.3s;
+}
+
+.navitem a.active:hover {
+    cursor: not-allowed;
+    color: rgb(221, 221, 221);
+}
+
+.nav-img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    padding: 1px 20px;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 3s;
+    animation: fadeanddropIn 0.5s ease-out forwards;
+}
+
+.banner-desk {
+    color: rgb(255, 107, 107);
+    margin: 20px 18px;
+    font-weight: 500;
+}
+
+/* Mobile Adjustments */
+
+.mobile-nav {
+  color: black;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+.navitem-mobile a { 
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  transition-duration: 0.3s;
+  padding: 10px 10px;
+  color: black;
+}
+
+.navitem-mobile a.active {
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+
+.mobile {
+  text-align: center;
+  padding: 30px;
+}
+
+.banner-mbl {
+  color: black;
+  text-align: center;
+  line-height: 10px;
+}
+
+@media all and (max-width: 500px) {
+  .nav {
+    display: none
+  }
+
+  .nav-img {
+    display: none;
+  }
+
+  .banner-desk {
+    display: none;
+  }
+
+  .banner-mbl {
+    display: contents;
+  }
+}
+
+@media all and (min-width: 501px) {
+    .mobile {
+      display: none;
+    }
+}
+
+/*Article*/
+
+.row {margin: 0 10px;}
+
+.articlepicture {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+    url('Images/background.jpeg');;
+    padding: 20px;
+    height: 260px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition-duration: 0.5s;
+    z-index: 1;
+}
+
+.articleheading {
+    position: absolute;
+    line-height: 10px;
+    font-size: 320%;
+    margin: 200px 10px;
+    transition-duration: 0.5s;
+    z-index: 2;
+}
+
+.articlepadding {
+    margin: 150px 30px;
+}
+
+.article {
+    margin: 0 10px;
+}
