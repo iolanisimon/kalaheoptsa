@@ -38,7 +38,13 @@
       margin: 0;
       padding: 0;
       text-decoration: none;
-      color: black;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('Images/background.jpeg');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
   }
   
   html, body {
@@ -82,15 +88,15 @@
 /*Navigation*/
 
 .nav {
-    color: black;
+    color: white;
     text-decoration: none;
     float: left;
     padding: 10px 30px;
     background-color: transparent;
     width: 100%;
     transition-duration: 0.5s;
-    position: relative;
-    z-index: 3;
+    position: fixed;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
 }
 
 .navitem a {
@@ -100,7 +106,7 @@
     list-style-type: none;
     transition-duration: 0.3s;
     padding: 8px 10px;
-    color: black;
+    color: white;
 }
 
 .navitem a:hover {
@@ -137,7 +143,7 @@
 /* Mobile Adjustments */
 
 .mobile-nav {
-  color: black;
+  color: white;
   text-decoration: none;
   transition-duration: 0.5s;
 }
@@ -148,7 +154,7 @@
   list-style-type: none;
   transition-duration: 0.3s;
   padding: 10px 10px;
-  color: black;
+  color: white;
 }
 
 .navitem-mobile a.active {
@@ -162,7 +168,7 @@
 }
 
 .banner-mbl {
-  color: black;
+  color: white;
   text-align: center;
   line-height: 10px;
 }
@@ -191,121 +197,55 @@
     }
 }
 
-/*Article*/
-
-.row {margin: 0 10px;}
-
-.articlepicture {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
-    url('Images/background.jpeg');;
-    padding: 20px;
-    height: 260px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+form {
+    text-align: center;
     position: relative;
+    padding: 0px 300px;
+}
+
+input {
+    background-color: white;
+    border: 1px transparent;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: Poppins;
+}
+
+.inputs {
+    padding: 10px;
+}
+
+/*Text Input*/
+
+.text {
+    color: black;
+    padding: 10px 20px;
     transition-duration: 0.5s;
-    z-index: 1;
 }
 
-.articleheading {
-    margin: 185px 10px 0px 0px;
+.text:hover {
+    box-shadow: inset 0 0 0 6px #000000;
     transition-duration: 0.5s;
-    z-index: 2;
-    padding: 0px 0px 0px 0px;
 }
 
-.articletitle {
-  font-size: 520%;
-  text-overflow: ellipsis;
-  position: inherit;
-  max-width: 100%;
-  min-width: 10%;
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 40px 0px;
-  transition-duration: 0.5s;
+.text:focus {
+    box-shadow: inset 0 0 0 30px #000000;
+    transition-duration: 1s;
+    color: white;
 }
 
-.articletitle:hover {
-  cursor: pointer;
-  transition-duration: 0.5s;
+.text::placeholder {
+    color: rgb(177, 177, 177);
 }
 
-.articletitle:active {
-  color: black;
-  font-size: 35px;
-  margin: 0px 0px 0px 10px;
-  padding: 80px 0px 80px 0px;
-  max-width: 100%;
+/* Checkbox */
+
+.checkbox {
+    padding: 10px;
+    border: 3px transparent;
+    background-color: black;
 }
 
-.articletite:active::after {
-  color: black;
-  font-size: 35px;
-  margin: 0px 0px 0px 10px;
-  padding: 80px 0px 80px 0px;
+.radio {
+    background: black;
 }
-
-.articleauth {
-  font-size: 30px;
-  line-height: 30px;
-  text-align: left;
-  margin: 0px 0px 0px 15px;
-}
-
-.articlepadding {
-    margin: 150px 30px;
-}
-
-.article {
-    margin: 0 10px;
-    z-index: 3;
-    position: static;
-    color: gray;
-}
-
-/* Tooltip container */
-.tooltip {
-  position: sticky;
-  display: inline-block;
-  align-content: center;
-  margin: 0 auto;
-  padding: 0px 0px 0px 0px;
-  transition-duration: 0.5s;
-  text-overflow: ellipsis;
-  position: inherit;
-  max-width: 100%;
-  min-width: 10%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 12%;
-  background-color: rgba(0, 0, 0, 0.329);
-  color: #fff;
-  text-align: center;
-  padding: 5px 0px;
-  border-radius: 20px;
-  transition-duration: 0.5s;
-  font-size: 10px;
-
- 
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 5;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  transition-duration: 0.5s;
-
-}
-
-
